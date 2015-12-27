@@ -17,7 +17,7 @@ version = Version [0,1,0,0] []
 bindir, libdir, datadir, libexecdir, sysconfdir :: FilePath
 
 bindir     = "/Users/TinyForce/Haskell_Project/.cabal-sandbox/bin"
-libdir     = "/Users/TinyForce/Haskell_Project/.cabal-sandbox/lib/x86_64-osx-ghc-7.10.3/Haskell-Project-0.1.0.0-7S8oyeovqrbIQ3leA8xaKB"
+libdir     = "/Users/TinyForce/Haskell_Project/.cabal-sandbox/lib/x86_64-osx-ghc-7.10.3/Haskell-Project-0.1.0.0-FEdJfXKgzGWKUsawrUg7bw"
 datadir    = "/Users/TinyForce/Haskell_Project/.cabal-sandbox/share/x86_64-osx-ghc-7.10.3/Haskell-Project-0.1.0.0"
 libexecdir = "/Users/TinyForce/Haskell_Project/.cabal-sandbox/libexec"
 sysconfdir = "/Users/TinyForce/Haskell_Project/.cabal-sandbox/etc"

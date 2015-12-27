@@ -7,6 +7,13 @@
   (major1) == 2 && (major2) <  7 || \
   (major1) == 2 && (major2) == 7 && (minor) <= 0)
 
+/* package OpenGL-2.13.1.0 */
+#define VERSION_OpenGL "2.13.1.0"
+#define MIN_VERSION_OpenGL(major1,major2,minor) (\
+  (major1) <  2 || \
+  (major1) == 2 && (major2) <  13 || \
+  (major1) == 2 && (major2) == 13 && (minor) <= 1)
+
 /* package base-4.8.2.0 */
 #define VERSION_base "4.8.2.0"
 #define MIN_VERSION_base(major1,major2,minor) (\
@@ -77,5 +84,5 @@
   (major1) == 1 && (major2) <  22 || \
   (major1) == 1 && (major2) == 22 && (minor) <= 0)
 
-#define CURRENT_PACKAGE_KEY "Haske_7S8oyeovqrbIQ3leA8xaKB"
+#define CURRENT_PACKAGE_KEY "Haske_FEdJfXKgzGWKUsawrUg7bw"
 

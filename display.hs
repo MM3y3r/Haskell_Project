@@ -1,10 +1,17 @@
 module Display (display) where
  
 import Graphics.UI.GLUT
+import Control.Monad
 import Cube
+import Points
  
 display :: DisplayCallback
-display = do 
+display = do
   clear [ColorBuffer]
-  cube 0.2
+  scale 0.7 0.7 (0.7::GLfloat)
+  forM_ (points 7) $ \(x,y,z) ->
+    preservingMatrix $ do
+      color $ Color3 ((x+1)/2) ((y+1)/2) ((z+1)/2)
+      translate $ Vector3 x y z
+      cube 0.1
   flush
