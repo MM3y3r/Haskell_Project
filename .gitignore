@@ -1,0 +1,4 @@
+# ignored files go here
+
+.cabal-sandbox
+cabal.sandbox.config
