@@ -1,5 +1,3 @@
 # ignored files go here
 
-.cabal-sandbox
-cabal.sandbox.config
-.DS_SRORE
+.DS_STORE

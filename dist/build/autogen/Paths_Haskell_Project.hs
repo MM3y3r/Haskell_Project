@@ -16,11 +16,11 @@ version :: Version
 version = Version [0,1,0,0] []
 bindir, libdir, datadir, libexecdir, sysconfdir :: FilePath
 
-bindir     = "/Users/TinyForce/Library/Haskell/bin"
-libdir     = "/Users/TinyForce/Library/Haskell/ghc-7.10.3-x86_64/lib/Haskell-Project-0.1.0.0"
-datadir    = "/Users/TinyForce/Library/Haskell/share/ghc-7.10.3-x86_64/Haskell-Project-0.1.0.0"
-libexecdir = "/Users/TinyForce/Library/Haskell/libexec"
-sysconfdir = "/Users/TinyForce/Library/Haskell/etc"
+bindir     = "/Users/TinyForce/Haskell_Project/.cabal-sandbox/bin"
+libdir     = "/Users/TinyForce/Haskell_Project/.cabal-sandbox/lib/x86_64-osx-ghc-7.10.3/Haskell-Project-0.1.0.0-7S8oyeovqrbIQ3leA8xaKB"
+datadir    = "/Users/TinyForce/Haskell_Project/.cabal-sandbox/share/x86_64-osx-ghc-7.10.3/Haskell-Project-0.1.0.0"
+libexecdir = "/Users/TinyForce/Haskell_Project/.cabal-sandbox/libexec"
+sysconfdir = "/Users/TinyForce/Haskell_Project/.cabal-sandbox/etc"
 
 getBinDir, getLibDir, getDataDir, getLibexecDir, getSysconfDir :: IO FilePath
 getBinDir = catchIO (getEnv "Haskell_Project_bindir") (\_ -> return bindir)
