@@ -5,9 +5,10 @@ import Bindings
 main :: IO ()
 main = do
   (_progName, _args) <- getArgsAndInitialize
-  initialDisplayMode $= [DoubleBuffered]
+  initialDisplayMode $= [WithDepthBuffer, DoubleBuffered]
   _window <- createWindow "Hello World"
   reshapeCallback $= Just reshape
+  depthFunc $= Just Less -- the comparison function for depth the buffer
   angle <- newIORef 0
   delta <- newIORef 0.1
   pos <- newIORef (0, 0)
